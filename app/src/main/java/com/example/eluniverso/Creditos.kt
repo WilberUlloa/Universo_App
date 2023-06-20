@@ -13,7 +13,7 @@ class Creditos : AppCompatActivity() {
         setContentView(R.layout.creditos)
 
         btn_regresar2.setOnClickListener {
-            startActivity(Intent(this, Creditos::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
         }
     }
 }

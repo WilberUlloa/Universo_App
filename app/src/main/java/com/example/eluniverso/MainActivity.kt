@@ -10,7 +10,6 @@ import kotlinx.android.synthetic.main.home.btn_Ejercicios
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         Thread.sleep(1500)
-        setTheme(R.style.Theme_Eluniverso)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -19,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btn_Ejercicios.setOnClickListener {
-            startActivity(Intent(this, Ejercicios::class.java))
+            startActivity(Intent(this, Ex_selection::class.java))
         }
 
         btn_Creditos.setOnClickListener {

@@ -13,7 +13,7 @@ class Conceptos : AppCompatActivity() {
         setContentView(R.layout.conceptos)
 
         btn_regresar.setOnClickListener {
-            startActivity(Intent(this, Conceptos::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
         }
     }
 }

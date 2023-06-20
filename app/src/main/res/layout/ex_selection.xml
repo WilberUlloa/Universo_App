@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/white"
+    tools:context=".Ex_selection">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,23 +27,29 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@id/UI_pregunta"
         android:layout_below="@id/header_title"
-        android:layout_above="@id/pregunta"
-        android:layout_margin="20dp">
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp">
 
     </ImageView>
 
     <TextView
+        android:id="@+id/UI_pregunta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/pregunta"
-        android:textStyle="bold"
+        android:layout_above="@id/choices_layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:text="Aquí se visualizará la pregunta"
+        android:textAlignment="center"
         android:textColor="@color/botones1"
         android:textSize="24dp"
-        android:textAlignment="center"
-        android:layout_margin="20dp"
-        android:layout_above="@id/choices_layout"/>
+        android:textStyle="bold" />
 
 
     <LinearLayout
@@ -56,7 +63,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/res_1"
+            android:id="@+id/UI_res_1"
             android:layout_margin="7dp"
             android:backgroundTint="@color/botones4"
             android:text="Opción 1"
@@ -65,7 +72,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/res_2"
+            android:id="@+id/UI_res_2"
             android:layout_margin="7dp"
             android:backgroundTint="@color/botones4"
             android:text="Opción 2"
@@ -74,7 +81,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/res_3"
+            android:id="@+id/UI_res_3"
             android:layout_margin="7dp"
             android:backgroundTint="@color/botones4"
             android:text="Opción 3"
