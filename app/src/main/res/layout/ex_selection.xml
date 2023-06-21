@@ -58,13 +58,13 @@
         android:id="@+id/choices_layout"
         android:layout_centerInParent="true"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="28dp">
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/UI_res_1"
-            android:layout_margin="7dp"
+            android:layout_margin="10dp"
             android:backgroundTint="@color/botones4"
             android:text="Opción 1"
             android:textColor="@color/white"/>
@@ -73,7 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/UI_res_2"
-            android:layout_margin="7dp"
+            android:layout_margin="10dp"
             android:backgroundTint="@color/botones4"
             android:text="Opción 2"
             android:textColor="@color/white"/>
@@ -82,7 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/UI_res_3"
-            android:layout_margin="7dp"
+            android:layout_margin="10dp"
             android:backgroundTint="@color/botones4"
             android:text="Opción 3"
             android:textColor="@color/white"/>
@@ -90,44 +90,15 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/valid_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
-        android:id="@+id/valid_btn"
-        android:text="Comprobar"
-        android:background="@color/botones1"
         android:layout_below="@id/choices_layout"
-        android:layout_marginTop="40dp"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@color/botones4"
-        android:layout_alignParentBottom="true"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/btn_regresar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/botones3"
-            android:text="Regresar"
-            android:textSize="15dp"
-            app:cornerRadius="10dp"
-            android:layout_marginRight="10sp"/>
-
-        <Button
-            android:id="@+id/btn_continuar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/botones2"
-            android:text="Continuar"
-            android:textSize="15dp"
-            app:cornerRadius="10dp"
-            android:layout_marginRight="10sp"/>
-
-    </LinearLayout>
-
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@color/botones1"
+        android:text="Comprobar" />
 
 </RelativeLayout>
