@@ -18,7 +18,6 @@
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
@@ -26,6 +25,13 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <activity android:name=".Conceptos"></activity>
+        <activity android:name=".Menu_actividades"></activity>
+        <activity android:name=".Creditos"></activity>
+        <activity android:name=".Ex_selection"></activity>
+        <activity android:name=".Ejercicios_2"></activity>
+
     </application>
 
 </manifest>

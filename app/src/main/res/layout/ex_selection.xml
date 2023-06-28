@@ -65,7 +65,6 @@
             android:layout_height="wrap_content"
             android:id="@+id/UI_res_1"
             android:layout_margin="10dp"
-            android:backgroundTint="@color/botones4"
             android:text="Opción 1"
             android:textColor="@color/white"/>
 
@@ -74,7 +73,6 @@
             android:layout_height="wrap_content"
             android:id="@+id/UI_res_2"
             android:layout_margin="10dp"
-            android:backgroundTint="@color/botones4"
             android:text="Opción 2"
             android:textColor="@color/white"/>
 
@@ -83,7 +81,6 @@
             android:layout_height="wrap_content"
             android:id="@+id/UI_res_3"
             android:layout_margin="10dp"
-            android:backgroundTint="@color/botones4"
             android:text="Opción 3"
             android:textColor="@color/white"/>
 
@@ -98,7 +95,6 @@
         android:layout_marginTop="35dp"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="25dp"
-        android:background="@color/botones1"
         android:text="Comprobar" />
 
 </RelativeLayout>

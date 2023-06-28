@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.menu_actividades.btn_trueFalse
 class Menu_actividades : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.menu_actividades)
 
         btn_selection.setOnClickListener{
             startActivity(Intent(this, Ex_selection::class.java))

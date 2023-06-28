@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.conceptos.btn_regresar
-import kotlinx.android.synthetic.main.home.btn_Conceptos
 
 class Conceptos : AppCompatActivity() {
 

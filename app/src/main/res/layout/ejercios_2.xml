@@ -112,7 +112,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/botones3"
             android:text="Regresar"
-            android:textSize="15dp"
+            android:textSize="20dp"
             app:cornerRadius="10dp"
             android:layout_marginRight="10sp"/>
 
@@ -122,7 +122,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/botones2"
             android:text="Continuar"
-            android:textSize="15dp"
+            android:textSize="20dp"
             app:cornerRadius="10dp"
             android:layout_marginRight="10sp"/>
 
