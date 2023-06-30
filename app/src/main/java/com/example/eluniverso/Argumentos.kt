@@ -37,4 +37,40 @@ object Argumentos {
 
         return ListaPreguntas
     }
+
+    fun obtenerEnunciado(): ArrayList<VF>{
+        val ListaEnunciados = ArrayList<VF>()
+
+        val enun1 = VF(
+            1,
+            "El universo es una gran extensión del espacio que contiene toda la materia y energía que existe",
+            1)
+        ListaEnunciados.add(enun1)
+
+        val enun2 = VF(
+            2,
+        "La vía láctea se compone de una serie de cuerpos celestes que orbitan alrededor del sol",
+        1)
+        ListaEnunciados.add(enun2)
+
+        val enun3 = VF(
+            3,
+            "El planeta Marte es el más pequeño del Sistema Solar",
+            2)
+        ListaEnunciados.add(enun3)
+
+        val enun4 = VF(
+            4,
+            "Neptuno es el octavo planeta en distancia al Sol y el más lejano del Sistema solar",
+            2)
+        ListaEnunciados.add(enun4)
+
+        val enun5 = VF(
+            5,
+            "10 planetas conforman el sistema solar",
+            2)
+        ListaEnunciados.add(enun5)
+
+        return ListaEnunciados
+    }
 }

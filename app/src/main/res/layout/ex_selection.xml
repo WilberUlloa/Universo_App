@@ -20,21 +20,32 @@
             android:layout_height="wrap_content"
             android:text="Seleccione una opción"
             android:textColor="@color/white"
-            android:textSize="28dp" />
+            android:gravity="center"
+            android:padding="8dp"
+            android:textSize="24dp" />
 
     </LinearLayout>
 
-    <ImageView
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imgCorrect"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/UI_pregunta"
         android:layout_below="@id/header_title"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp">
+        android:paddingTop="4dp"
+        android:src="@drawable/check"
+        android:visibility="invisible" />
 
-    </ImageView>
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imgIncorrect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/UI_pregunta"
+        android:layout_below="@id/header_title"
+        android:paddingTop="4dp"
+        android:src="@drawable/incorrect"
+        android:visibility="invisible" />
+
 
     <TextView
         android:id="@+id/UI_pregunta"
@@ -47,8 +58,8 @@
         android:layout_marginBottom="20dp"
         android:text="Aquí se visualizará la pregunta"
         android:textAlignment="center"
-        android:textColor="@color/botones1"
         android:textSize="24dp"
+        android:textColor="#363A43"
         android:textStyle="bold" />
 
 
@@ -60,29 +71,41 @@
         android:orientation="vertical"
         android:padding="28dp">
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="10dp"
             android:id="@+id/UI_res_1"
             android:layout_margin="10dp"
             android:text="Opción 1"
-            android:textColor="@color/white"/>
+            android:gravity="center"
+            android:textColor="#7A8089"
+            android:textSize="16dp"/>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="10dp"
             android:id="@+id/UI_res_2"
             android:layout_margin="10dp"
             android:text="Opción 2"
-            android:textColor="@color/white"/>
+            android:gravity="center"
+            android:textColor="#7A8089"
+            android:textSize="16dp"/>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="10dp"
             android:id="@+id/UI_res_3"
             android:layout_margin="10dp"
             android:text="Opción 3"
-            android:textColor="@color/white"/>
+            android:gravity="center"
+            android:textColor="#7A8089"
+            android:textSize="16dp"/>
+
+
+
 
     </LinearLayout>
 

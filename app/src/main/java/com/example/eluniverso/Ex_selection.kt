@@ -8,10 +8,14 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.core.view.isInvisible
+import androidx.core.view.isVisible
 import kotlinx.android.synthetic.main.ex_selection.UI_pregunta
 import kotlinx.android.synthetic.main.ex_selection.UI_res_1
 import kotlinx.android.synthetic.main.ex_selection.UI_res_2
 import kotlinx.android.synthetic.main.ex_selection.UI_res_3
+import kotlinx.android.synthetic.main.ex_selection.imgCorrect
+import kotlinx.android.synthetic.main.ex_selection.imgIncorrect
 import kotlinx.android.synthetic.main.ex_selection.valid_btn
 
 class Ex_selection : AppCompatActivity(), View.OnClickListener {
@@ -103,8 +107,11 @@ class Ex_selection : AppCompatActivity(), View.OnClickListener {
 
                     if (devolverPregunta!!.correctPregunta != aSeleccionPosicion){
                         RespuestaCorrecta(aSeleccionPosicion, R.drawable.op_incorrecta)
+                        imgIncorrect.isInvisible = imgIncorrect.isVisible
+                    }else{
+                        RespuestaCorrecta(devolverPregunta.correctPregunta, R.drawable.opcion_correcta)
+                        imgCorrect.isInvisible = imgCorrect.isVisible
                     }
-                    RespuestaCorrecta(devolverPregunta.correctPregunta, R.drawable.opcion_correcta)
 
                     if (aPosicionActual == aListaPregunas!!.size){
                         valid_btn.text = "COMPLETADO"

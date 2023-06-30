@@ -3,130 +3,110 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
     tools:context=".Ejercicios_2">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="@color/botones1"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:id="@+id/header_title"
+        android:layout_alignParentTop="true"
+        android:background="@color/botones4">
 
         <TextView
-            android:id="@+id/text_comment"
-            android:layout_width="wrap_content"
+            android:id="@+id/total_question"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Seleccione la opción si Verdadera o Falsa"
+            android:text="Verdadero o Falso"
             android:textColor="@color/white"
-            android:textAlignment="center"
-            android:textSize="30dp" />
+            android:gravity="center"
+            android:padding="8dp"
+            android:textSize="24dp" />
 
     </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imgCorrect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/UI_enunciado"
+        android:layout_below="@id/header_title"
+        android:paddingTop="4dp"
+        android:src="@drawable/check"
+        android:visibility="invisible" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imgIncorrect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/UI_enunciado"
+        android:layout_below="@id/header_title"
+        android:paddingTop="4dp"
+        android:src="@drawable/incorrect"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:id="@+id/UI_enunciado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/choices_layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Aquí se visualizará la pregunta"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textColor="#363A43"
+        android:textStyle="bold" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="150dp"
-        android:padding="20dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="40dp"
-        android:background="@color/botones2"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:id="@+id/choices_layout"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="28dp">
 
-        <LinearLayout
-            android:layout_width="238dp"
+        <TextView
+            android:id="@+id/UI_v"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="30dp"
+            android:layout_margin="10dp"
             android:gravity="center"
-            android:orientation="vertical">
+            android:padding="10dp"
+            android:text="VERDADERO"
+            android:textColor="#7A8089"
+            android:textSize="16dp" />
 
-            <TextView
-                android:id="@+id/text_question"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="El planeta Marte es el más pequeño del Sistema Solar"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <RadioButton
-                android:id="@+id/op1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="Verdadero"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-            <RadioButton
-                android:id="@+id/op2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="Falso"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
-        </RadioGroup>
-
-        <Button
-            android:id="@+id/btn_eva2"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="40dp"
-            android:backgroundTint="@color/botones1"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/UI_f"
+            android:layout_margin="10dp"
+            android:text="FALSO"
             android:gravity="center"
-            android:text="Validar"
-            app:cornerRadius="30dp" />
+            android:textColor="#7A8089"
+            android:textSize="16dp"/>
 
     </LinearLayout>
 
-
-    <LinearLayout
+    <Button
+        android:id="@+id/valid_btn2"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@color/botones4"
-        android:layout_marginTop="690dp"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/btn_regresar2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/botones3"
-            android:text="Regresar"
-            android:textSize="20dp"
-            app:cornerRadius="10dp"
-            android:layout_marginRight="10sp"/>
-
-        <Button
-            android:id="@+id/btn_continuar2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/botones2"
-            android:text="Continuar"
-            android:textSize="20dp"
-            app:cornerRadius="10dp"
-            android:layout_marginRight="10sp"/>
-
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choices_layout"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="Comprobar" />
 
 
 </RelativeLayout>
