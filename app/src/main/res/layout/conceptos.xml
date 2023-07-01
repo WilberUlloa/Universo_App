@@ -4,31 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="6dp"
     tools:context=".Conceptos">
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/botones3"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginTop="80dp">
+        android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            card_view:cardCornerRadius="18dp"
             card_view:cardBackgroundColor="@color/botones2"
             android:layout_margin="10dp">
 
@@ -39,26 +29,27 @@
                 android:padding="10dp"
                 android:textColor="@color/white"
                 android:textStyle="bold"
-                android:textSize="20dp"
-                android:text="@string/titleCardView" />
+                android:textSize="24dp"
+                android:text="@string/titleCardView1" />
 
             <TextView
                 android:id="@+id/lblInfor1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="50dp"
+                android:layout_height="match_parent"
+                android:paddingTop="50dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
                 android:textColor="@color/white"
-                android:textStyle="bold"
-                android:textSize="20dp"
-                android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-                magnis dis parturient montes." />
+                android:textSize="18dp"
+                android:text="El sistema solar es el contexto planetario, un circuito en donde ocho planetas orbitan constantemente a una única estrella, el Sol." />
+
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView2"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            card_view:cardCornerRadius="18dp"
             card_view:cardBackgroundColor="@color/botones1"
             android:layout_margin="10dp">
 
@@ -69,26 +60,26 @@
                 android:padding="10dp"
                 android:textColor="@color/white"
                 android:textStyle="bold"
-                android:textSize="20dp"
-                android:text="@string/titleCardView" />
+                android:textSize="24dp"
+                android:text="@string/titleCardView2" />
 
             <TextView
                 android:id="@+id/lblInfor2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="50dp"
+                android:paddingTop="50dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
                 android:textColor="@color/white"
-                android:textStyle="bold"
                 android:textSize="20dp"
-                android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-                magnis dis parturient montes." />
+                android:text="A su alrededor orbitan ocho planetas de distinto tamaño y a distintas distancias, trazando a su paso trayectorias elípticas." />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView3"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            card_view:cardCornerRadius="18dp"
             card_view:cardBackgroundColor="@color/botones4"
             android:layout_margin="10dp">
 
@@ -99,36 +90,22 @@
                 android:padding="10dp"
                 android:textColor="@color/white"
                 android:textStyle="bold"
-                android:textSize="20dp"
-                android:text="@string/titleCardView" />
+                android:textSize="24dp"
+                android:text="@string/titleCardView3" />
 
             <TextView
                 android:id="@+id/lblInfor3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="50dp"
+                android:paddingTop="50dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
                 android:textColor="@color/white"
-                android:textStyle="bold"
                 android:textSize="20dp"
-                android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-                magnis dis parturient montes." />
+                android:text="Planetas interiores, los más próximos al sol y los más pequeños:
+                Mercurio, Venus, La Tierra y Marte. Los exteriores, Júpeter, Saturno, Neptuno y Urano" />
         </androidx.cardview.widget.CardView>
 
-        <Button
-            android:id="@+id/btn_regresar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/botones3"
-            android:layout_marginStart="20dp"
-            android:text="Regresar"
-            android:textSize="20dp"
-            app:cornerRadius="10dp"
-            android:layout_marginRight="10sp"/>
-
     </LinearLayout>
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

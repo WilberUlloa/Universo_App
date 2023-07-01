@@ -1,5 +1,6 @@
 package com.example.eluniverso
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Bundle
@@ -17,6 +18,7 @@ import kotlinx.android.synthetic.main.ex_selection.UI_res_3
 import kotlinx.android.synthetic.main.ex_selection.imgCorrect
 import kotlinx.android.synthetic.main.ex_selection.imgIncorrect
 import kotlinx.android.synthetic.main.ex_selection.valid_btn
+import kotlinx.android.synthetic.main.menu_actividades.btn_selection
 
 class Ex_selection : AppCompatActivity(), View.OnClickListener {
 
@@ -43,6 +45,9 @@ class Ex_selection : AppCompatActivity(), View.OnClickListener {
         opcionVista()
         if (aPosicionActual == aListaPregunas!!.size){
             valid_btn.text = "COMPLETADO"
+            valid_btn.setOnClickListener{
+                startActivity(Intent(this, Screen_final::class.java))
+            }
         }else{
             valid_btn.text = "VALIDAR"
         }
@@ -115,6 +120,9 @@ class Ex_selection : AppCompatActivity(), View.OnClickListener {
 
                     if (aPosicionActual == aListaPregunas!!.size){
                         valid_btn.text = "COMPLETADO"
+                        valid_btn.setOnClickListener{
+                            startActivity(Intent(this, Screen_final::class.java))
+                        }
                     }else{
                         valid_btn.text = "SIGUIENTE"
                     }

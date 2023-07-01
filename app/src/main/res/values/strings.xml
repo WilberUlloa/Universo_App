@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Universe</string>
-    <string name="titleCardView">Contenido</string>
+    <string name="titleCardView1">¿Qué es el sistema solar?</string>
+    <string name="titleCardView2">¿Cómo está formado?</string>
+    <string name="titleCardView3">Los planetas</string>
 </resources>

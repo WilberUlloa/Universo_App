@@ -31,6 +31,7 @@
         <activity android:name=".Creditos"></activity>
         <activity android:name=".Ex_selection"></activity>
         <activity android:name=".Ejercicios_2"></activity>
+        <activity android:name=".Screen_final"></activity>
 
     </application>
 

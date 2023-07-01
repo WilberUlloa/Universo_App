@@ -73,6 +73,9 @@ class Ejercicios_2 : AppCompatActivity(), View.OnClickListener {
 
                     if (aPosicionActual == aListaEnunciados!!.size){
                         valid_btn2.text = "COMPLETADO"
+                        valid_btn2.setOnClickListener{
+                            startActivity(Intent(this, Screen_final::class.java))
+                        }
                     }else{
                         valid_btn2.text = "SIGUIENTE"
                     }
@@ -88,6 +91,9 @@ class Ejercicios_2 : AppCompatActivity(), View.OnClickListener {
         opcionVista()
         if (aPosicionActual == aListaEnunciados!!.size){
             valid_btn2.text = "COMPLETADO"
+            valid_btn2.setOnClickListener{
+                startActivity(Intent(this, Screen_final::class.java))
+            }
         }else{
             valid_btn2.text = "VALIDAR"
         }

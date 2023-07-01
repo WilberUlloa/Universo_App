@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#270140"
+    android:orientation="vertical"
+    tools:context=".Screen_final">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Universe"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#592E4A"
+        android:textAlignment="center"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ha culminado la actividad"
+        android:layout_below="@id/title"
+        android:paddingTop="20dp"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:textColor="#F2D22E"
+        android:gravity="center" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imgSol"
+        android:layout_width="match_parent"
+        android:layout_below="@id/textview"
+        android:layout_height="400dp"
+        android:padding="6dp"
+        android:src="@drawable/anima_sol" />
+
+    <Button
+        android:id="@+id/regresar_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgSol"
+        android:textColor="#270140"
+        android:backgroundTint="#35F2DF"
+        android:layout_margin="70dp"
+        android:text="Regresar" />
+
+
+</RelativeLayout>
